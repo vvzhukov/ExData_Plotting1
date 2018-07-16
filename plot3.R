@@ -1,8 +1,10 @@
+## PLOT III
+
 source('Loader.R')
 data <- loadData('household_power_consumption.txt')
 
-## PLOT III
-png(filename='plot3.png', width=480, height=480, units='px')
+createPng('plot3.png')
+
 startDay = as.POSIXct(strftime("2007-02-01 00:00:00"))
 endDay = as.POSIXct(strftime("2007-02-03 00:00:00"))
 plot(data$Time,

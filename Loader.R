@@ -7,3 +7,7 @@ loadData <- function(dat) {
     filter(Time >= strftime('2007-02-01 00:00:00'), Time < strftime('2007-02-03 00:00:00')) %>%
     tbl_df
 }
+
+createPng <- function(name) {
+  png(filename=name, width=480, height=480, units='px')
+}

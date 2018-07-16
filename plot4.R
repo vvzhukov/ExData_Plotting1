@@ -1,8 +1,9 @@
+## PLOT IV
+
 source('Loader.R')
 data <- loadData('household_power_consumption.txt')
 
-## PLOT IV
-png(filename='plot4.png', width=480, height=480, units='px')
+createPng('plot4.png')
 
 par(mfrow=c(2,2))
 
